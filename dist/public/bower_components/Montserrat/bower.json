@@ -1,0 +1,10 @@
+{
+    "name": "Montserrat",
+    "main": "*.otf",
+    "ignore": [],
+    "authors": [
+        "Julieta Ulanovsky"
+    ],
+    "license": "OFL-1.1",
+    "description": "Montserrat OTF font"
+}

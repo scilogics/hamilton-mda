@@ -1,0 +1,81 @@
+
+<div class="row" ng-controller="JobCtrl">
+  <div class="col-lg-12">
+    <rd-widget>
+      <rd-widget-header icon="fa-folder-open" title="Available Batches">
+      </rd-widget-header>
+      <rd-widget-body classes="medium no-padding">
+        <div class="table-responsive">
+          <table class="table" data-toggle="table" id="events-id2" data-url="data1.json" data-height="299" data-cache="false" data-search="true">
+            <input type="text" placeholder="Filter" ng-model="searchText" class="form-control input-sm"/>
+            <thead>
+      	      <tr>
+                <th data-field="id" data-sortable="true">Batch ID</th>
+                <th data-field="price" data-sortable="true">Created On</th>
+                <th>Select</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Batch005</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>Batch006</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>Batch007</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>Batch008</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>Batch009</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>Batch010</td><td>10-15-2015</td><td><input type="checkbox"></input>
+            </tbody>
+          </table>
+        </div>      
+      </rd-widget-body>
+      <rd-widget-footer>
+        <div class="clearfix"></div>
+      </rd-widget-footer>
+    </rd-widget>
+  </div>
+  <!--<div class="col-lg-6">
+    <rd-widget>
+      <rd-widget-header icon="fa-flask" title="Available PCR Templates">
+      </rd-widget-header>
+      <rd-widget-body classes="medium no-padding">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <input type="text" placeholder="Filter" ng-model="searchText" class="form-control input-sm"/>
+            <thead>
+      	      <tr>
+                <th data-field="id" data-sortable="true">Batch ID</th>
+                <th data-field="price" data-sortable="true">Created On</th>
+                <th>Select</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>PCR_Setup001</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>PCR_Setup002</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>PCR_Setup003</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>PCR_Setup004</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>PCR_Setup005</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>PCR_Setup006</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>PCR_Setup007</td><td>10-15-2015</td><td><input type="checkbox"></input>
+              <tr><td>PCR_Setup008</td><td>10-15-2015</td><td><input type="checkbox"></input>
+           </tbody>
+          </table>
+        </div>
+      </rd-widget-body>
+      <rd-widget-footer>
+        <div class="clearfix">
+        </div>
+      </rd-widget-footer>
+    </rd-widget>
+  </div>-->
+  <div class="col-lg-12">
+    <rd-widget>
+      <rd-widget-header icon="fa fa-gears" title="Job Details">
+      </rd-widget-header>
+      <rd-widget-body classes="small no-padding">
+      
+      </rd-widget-body>
+      <rd-widget-footer>
+          <button class="btn btn-sm btn-info" ng-click="delete()">Queue Job</button>
+      </rd-widget-footer>
+    </rd-widget>
+  </div>
+</div>
+

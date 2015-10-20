@@ -1,0 +1,105 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>HAMILTON | MDA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="app/33a834f7.vendor.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="app/21e09435.app.css"/>
+  </head>
+  <body ng-app="hamiltonApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <body ng-controller="MainCtrl">
+    <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+  
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar">
+          <li class="sidebar-main">
+            <a ng-click="toggleSidebar()">
+              HAMILTON | MDA
+              <span class="menu-icon glyphicon glyphicon-transfer"></span>
+            </a>
+          </li>
+          <li class="sidebar-title"><span>NAVIGATION PANEL</span></li>
+          <li class="sidebar-list">
+            <a href="#/">VIEW DASHBOARD <span class="menu-icon fa fa-tachometer"></span></a>
+          </li>
+          <li class="sidebar-list">
+            <a href="#/jobs">QUEUE JOB<span class="menu-icon fa fa-external-link"></span></a>
+          </li>
+          <!--<li class="sidebar-list">
+            <a href="#/assays">CREATE PCR ASSAY<span class="menu-icon fa fa-flask"></span></a>
+          </li>
+          <li class="sidebar-list">
+            <a href="#/reports">GENERATE REPORT <span class="menu-icon fa fa-edit"></span></a>
+          </li>
+        </ul>-->
+        <div class="sidebar-footer">
+          <div><a>Developed By Adan Orta</a></div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+  
+      <div id="content-wrapper">
+        <div class="page-content">
+  
+          <!-- Header Bar -->
+          <div class="row header">
+            <div class="col-xs-12">
+              <div class="user pull-right">
+                <div class="item dropdown">
+                  <a href="/" class="dropdown-toggle">
+                    <img src="assets/images/43847504.hamilton_logo2.jpg">
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="link">
+                      <a href="https://www.hamiltoncompany.com" target="_blank">
+                        Company
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+              <div class="meta">
+                <div class="page">
+                  Hamilton Robotics
+                </div>
+                <div class="breadcrumb-links">
+                  Home / Interface
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Header Bar -->
+  
+          <!-- Main Content -->
+          <div ui-view></div>
+  
+        </div><!-- End Page Content -->
+      </div><!-- End Content Wrapper -->
+    </div><!-- End Page Wrapper -->
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <script src="app/afe481cb.vendor.js"></script>
+
+        
+        <script src="app/faae76ee.app.js"></script>
+</body>
+</html>

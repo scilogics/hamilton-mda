@@ -1,0 +1,150 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>HAMILTON | MDA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="bower_components/rdash-ui/dist/css/rdash.css" />
+      <link rel="stylesheet" href="bower_components/rdash-ui/dist/css/rdash.min.css" />
+      <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- build:css({.tmp,client}) app/app.css -->
+    <link rel="stylesheet" href="app/app.css">
+      <!-- injector:css -->
+      <link rel="stylesheet" href="app/app.css">
+      <link rel="stylesheet" href="components/modal/modal.css">
+      <!-- endinjector -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="hamiltonApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <body ng-controller="MainCtrl">
+    <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+  
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar">
+          <li class="sidebar-main">
+            <a ng-click="toggleSidebar()">
+              HAMILTON | MDA
+              <span class="menu-icon glyphicon glyphicon-transfer"></span>
+            </a>
+          </li>
+          <li class="sidebar-title"><span>NAVIGATION PANEL</span></li>
+          <li class="sidebar-list">
+            <a href="#/">VIEW DASHBOARD <span class="menu-icon fa fa-tachometer"></span></a>
+          </li>
+          <li class="sidebar-list">
+            <a href="#/jobs">QUEUE JOB<span class="menu-icon fa fa-external-link"></span></a>
+          </li>
+          <!--<li class="sidebar-list">
+            <a href="#/assays">CREATE PCR ASSAY<span class="menu-icon fa fa-flask"></span></a>
+          </li>
+          <li class="sidebar-list">
+            <a href="#/reports">GENERATE REPORT <span class="menu-icon fa fa-edit"></span></a>
+          </li>
+        </ul>-->
+        <div class="sidebar-footer">
+          <div><a>Developed By Adan Orta</a></div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+  
+      <div id="content-wrapper">
+        <div class="page-content">
+  
+          <!-- Header Bar -->
+          <div class="row header">
+            <div class="col-xs-12">
+              <div class="user pull-right">
+                <div class="item dropdown">
+                  <a href="/" class="dropdown-toggle">
+                    <img src="assets/images/hamilton_logo2.jpg">
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="link">
+                      <a href="https://www.hamiltoncompany.com" target="_blank">
+                        Company
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+              <div class="meta">
+                <div class="page">
+                  Hamilton Robotics
+                </div>
+                <div class="breadcrumb-links">
+                  Home / Interface
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Header Bar -->
+  
+          <!-- Main Content -->
+          <div ui-view></div>
+  
+        </div><!-- End Page Content -->
+      </div><!-- End Content Wrapper -->
+    </div><!-- End Page Wrapper -->
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/angular-socket-io/socket.js"></script>
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <!-- endbower -->
+      <script src="socket.io-client/socket.io.js"></script>
+    <!-- endbuild -->
+
+        
+        <!-- build:js({.tmp,client}) app/app.js -->
+        
+        <script src="app/app.js"></script>
+          <!-- injector:js -->
+          <script src="app/controllers/alert-ctrl.js"></script>
+          <script src="app/controllers/assay-ctrl.js"></script>
+          <script src="app/controllers/device-ctrl.js"></script>
+          <script src="app/controllers/headerbar-ctrl.js"></script>
+          <script src="app/controllers/job-ctrl.js"></script>
+          <script src="app/controllers/main.ctrl.js"></script>
+          <script src="app/controllers/plate-ctrl.js"></script>
+          <script src="app/directives/loading.js"></script>
+          <script src="app/directives/plate-layout.js"></script>
+          <script src="app/directives/widget-body.js"></script>
+          <script src="app/directives/widget-footer.js"></script>
+          <script src="app/directives/widget-header.js"></script>
+          <script src="app/directives/widget.js"></script>
+          <script src="components/modal/modal.service.js"></script>
+          <script src="components/socket/socket.service.js"></script>
+          <!-- endinjector -->
+        <!-- endbuild -->
+</body>
+</html>
